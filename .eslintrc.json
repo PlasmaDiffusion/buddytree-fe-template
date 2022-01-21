@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-typescript", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    /* Prefer TypeScript */
+    "react/prop-types": 0,
+    "react/require-default-props": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": 0,
+
+    /* Rules */
+    "arrow-body-style": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/label-has-associated-control": [2, { "assert": "htmlFor" }],
+
+    /* NextJS */
+    // Declared top scope in Layout
+    "react/react-in-jsx-scope": 0,
+    // next/link passes the href to the <a> tag
+    // already has error if next/link is missing the href
+    // be careful with <a> tags not wrapped in next/link
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    // Throws a warning if next/image is missing an alt tag
+    "jsx-a11y/alt-text": [
+      1,
+      {
+        "elements": ["img", "object", "area", "input[type=\"image\"]"],
+        "img": ["Image"],
+        "object": ["Object"],
+        "area": ["Area"],
+        "input[type=\"image\"]": ["InputImage"]
+      }
+    ],
+
+    /* Redux Toolkit */
+    // Incompatible with RTK's method of handling mutable data. (immer package)
+    "no-param-reassign": 0
+  }
+}

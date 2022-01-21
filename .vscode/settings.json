@@ -1,0 +1,39 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "Bootcamp",
+    "Brauer",
+    "Couldn",
+    "Figma",
+    "Jitsi",
+    "Linkify",
+    "Mixins",
+    "Prefs",
+    "buddytree",
+    "checkmark",
+    "csrf",
+    "eventbrite",
+    "minmax",
+    "preconnect",
+    "reduxjs",
+    "stylelint",
+    "unoptimized",
+    "uuidv",
+    "youtube"
+  ],
+  "cSpell.ignorePaths": [
+    "node_modules",
+    "yarn.lock",
+    ".vscode",
+    ".prettierignore",
+    ".prettierrc.json",
+    ".stylelintrc.json",
+    "package.json",
+    "next.config.js",
+    ".env.local",
+    ".eslintrc.json"
+  ],
+  "cSpell.ignoreWords": ["modestbranding"]
+}

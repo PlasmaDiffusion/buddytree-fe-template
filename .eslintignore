@@ -1,0 +1,7 @@
+node_modules
+next-env.d.ts
+.next
+.vscode
+yarn.lock
+next.config.js
+/pages/new-home/
